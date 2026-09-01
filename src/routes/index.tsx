@@ -731,12 +731,8 @@ function Index() {
                         : "bg-card hover:bg-secondary"
                     }`}
                   >
-                    {p.featured ? (
-                      <span className="mb-4 w-fit rounded-full border border-primary-foreground/40 px-3 py-1 text-[0.62rem] tracking-[0.2em] uppercase">
-                        Paling direkomendasikan
-                      </span>
-                    ) : null}
                     <h3 className="font-serif text-2xl">{p.name}</h3>
+
                     <p
                       className={`mt-1 text-sm ${p.featured ? "text-primary-foreground/70" : "text-muted-foreground"}`}
                     >
