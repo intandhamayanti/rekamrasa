@@ -576,7 +576,7 @@ function Index() {
                   <Reveal
                     key={name}
                     delay={i * 70}
-                    className="group relative -mt-px -ml-px flex min-h-[13rem] flex-col justify-end overflow-hidden border-t border-l border-hairline bg-card p-7 transition-colors duration-500 hover:bg-primary hover:text-primary-foreground"
+                    className="group relative -mt-px -ml-px flex flex-col overflow-hidden border-t border-l border-hairline bg-card p-7 transition-colors duration-500 hover:bg-primary hover:text-primary-foreground"
                   >
                     <h3 className="relative font-serif text-[1.9rem] leading-tight transition-transform duration-500 group-hover:translate-x-1">
                       {name}
@@ -731,12 +731,8 @@ function Index() {
                         : "bg-card hover:bg-secondary"
                     }`}
                   >
-                    {p.featured ? (
-                      <span className="mb-4 w-fit rounded-full border border-primary-foreground/40 px-3 py-1 text-[0.62rem] tracking-[0.2em] uppercase">
-                        Paling direkomendasikan
-                      </span>
-                    ) : null}
                     <h3 className="font-serif text-2xl">{p.name}</h3>
+
                     <p
                       className={`mt-1 text-sm ${p.featured ? "text-primary-foreground/70" : "text-muted-foreground"}`}
                     >
