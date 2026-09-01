@@ -576,7 +576,7 @@ function Index() {
                   <Reveal
                     key={name}
                     delay={i * 70}
-                    className="group relative -mt-px -ml-px flex min-h-[13rem] flex-col justify-end overflow-hidden border-t border-l border-hairline bg-card p-7 transition-colors duration-500 hover:bg-primary hover:text-primary-foreground"
+                    className="group relative -mt-px -ml-px flex flex-col overflow-hidden border-t border-l border-hairline bg-card p-7 transition-colors duration-500 hover:bg-primary hover:text-primary-foreground"
                   >
                     <h3 className="relative font-serif text-[1.9rem] leading-tight transition-transform duration-500 group-hover:translate-x-1">
                       {name}
