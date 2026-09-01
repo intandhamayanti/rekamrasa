@@ -995,30 +995,10 @@ function Index() {
           </div>
         </section>
 
-        {/* FINAL CTA — with photo strip gimmicks */}
+        {/* FINAL CTA */}
         <section id="konsultasi" className="rule">
           <div className="mx-auto max-w-[1180px] px-6 py-16 md:py-24">
             <Reveal className="relative overflow-hidden rounded-[8px] border border-foreground bg-primary px-6 py-20 text-center text-primary-foreground md:px-16 md:py-32">
-              {/* gimmick strips */}
-              <img
-                src={heroStrips.url}
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute -top-10 -left-14 hidden w-52 rotate-[-14deg] rounded-[3px] border border-primary-foreground/20 opacity-25 transition-transform duration-700 hover:rotate-[-8deg] md:block"
-              />
-              <img
-                src={heroStrips.url}
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute -right-16 -bottom-14 hidden w-56 rotate-[12deg] rounded-[3px] border border-primary-foreground/20 opacity-25 md:block"
-              />
-              <span className="pointer-events-none absolute top-10 right-12 hidden font-serif text-[1.6rem] opacity-30 md:block">
-                ✦
-              </span>
-              <span className="pointer-events-none absolute bottom-14 left-16 hidden font-serif text-[1.2rem] opacity-25 md:block">
-                ✦
-              </span>
-
               <div className="relative">
                 <p className="text-[0.66rem] tracking-[0.28em] uppercase opacity-70">
                   Siap booking acaramu
