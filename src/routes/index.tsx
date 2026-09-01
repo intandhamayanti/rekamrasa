@@ -1,21 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import heroStrips from "@/assets/hero-strips.png.asset.json";
-import themeClassic from "@/assets/classic-white.png.asset.json";
-import themeBloom from "@/assets/romantic-bloom.png.asset.json";
-import themeMinimal from "@/assets/modern-minimal.png.asset.json";
-import themeRetro from "@/assets/retro-flash.png.asset.json";
-import themeEditorial from "@/assets/editorial-clean.png.asset.json";
-import themeCustom from "@/assets/custom-theme.png.asset.json";
-import boothTelephone from "@/assets/booth-telephone.png.asset.json";
-import boothElevator from "@/assets/booth-elevator.png.asset.json";
-import boothCowboy from "@/assets/booth-cowboy.png.asset.json";
-import resWedding from "@/assets/result-wedding.png.asset.json";
-import resApoteker from "@/assets/result-apoteker.png.asset.json";
-import resActivation from "@/assets/result-activation.png.asset.json";
-import resGathering from "@/assets/result-gathering.png.asset.json";
-import resEngagement from "@/assets/result-engagement.png.asset.json";
-import resDokter from "@/assets/result-dokter.png.asset.json";
+const heroStrips = "/ChatGPT Image Aug 31, 2026, 05_55_09 PM.png";
+const themeClassic = "/ChatGPT Image Aug 31, 2026, 05_43_56 PM.png";
+const themeBloom = "/ChatGPT Image Aug 31, 2026, 05_45_35 PM.png";
+const themeMinimal = "/ChatGPT Image Aug 31, 2026, 05_47_08 PM.png";
+const themeRetro = "/ChatGPT Image Aug 31, 2026, 05_59_35 PM.png";
+const themeEditorial = "/ChatGPT Image Aug 31, 2026, 06_11_29 PM.png";
+const themeCustom = "/ChatGPT Image Aug 31, 2026, 06_33_30 PM.png";
+const boothTelephone = "/ChatGPT Image Sep 1, 2026, 03_01_33 PM (1).png";
+const boothElevator = "/ChatGPT Image Sep 1, 2026, 03_00_10 PM (1).png";
+const boothCowboy = "/ChatGPT Image Sep 1, 2026, 02_57_42 PM (1).png";
+const resWedding = "/ChatGPT Image Sep 1, 2026, 02_04_32 PM (1).png";
+const resApoteker = "/ChatGPT Image Sep 1, 2026, 02_25_13 PM (1).png";
+const resActivation = "/ChatGPT Image Sep 1, 2026, 02_30_44 PM (1).png";
+const resGathering = "/ChatGPT Image Sep 1, 2026, 02_34_17 PM (1).png";
+const resEngagement = "/ChatGPT Image Sep 1, 2026, 02_38_26 PM (1).png";
+const resDokter = "/ChatGPT Image Sep 1, 2026, 01_56_17 PM (1).png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
