@@ -192,7 +192,6 @@ const packages = [
       "Operator standby",
       "Setup dan bongkar booth",
       "Template standar",
-      "Print dibawa pulang tamu",
     ],
     cta: "Pilih Paket B",
     featured: true,
