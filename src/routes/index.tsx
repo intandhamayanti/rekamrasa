@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 const heroStrips = "/ChatGPT Image Aug 31, 2026, 05_55_09 PM.png";
-const themeClassic = "/ChatGPT Image Aug 31, 2026, 05_43_56 PM.png";
+const themeClassic = "public/theme-classic.png";
 const themeBloom = "/ChatGPT Image Aug 31, 2026, 05_45_35 PM.png";
 const themeMinimal = "/ChatGPT Image Aug 31, 2026, 05_47_08 PM.png";
 const themeRetro = "/ChatGPT Image Aug 31, 2026, 05_59_35 PM.png";
