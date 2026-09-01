@@ -814,31 +814,21 @@ function Index() {
         <section className="rule">
           <div className="mx-auto max-w-[1180px] px-6 py-20 md:py-28">
             <h2 className="font-serif text-[2rem] md:text-[2.6rem]">Hasil acara</h2>
-            <div className="mt-10 overflow-hidden rounded-[2px] border border-hairline">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3">
-                <Reveal className="-mt-px -ml-px overflow-hidden border-t border-l border-hairline sm:col-span-2">
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {results.map(([src, alt], i) => (
+                <Reveal
+                  key={src}
+                  delay={i * 60}
+                  className="overflow-hidden rounded-[2px] border border-hairline bg-secondary"
+                >
                   <img
-                    src={galleryMonitor.url}
-                    alt="Layar photobooth Rekam Rasa menampilkan sesi tamu di acara pernikahan"
-                    className="aspect-[5/4] w-full object-cover transition-transform duration-700 hover:scale-[1.04] sm:aspect-[10/4]"
+                    src={src}
+                    alt={alt}
+                    className="aspect-[5/4] w-full object-cover transition-transform duration-700 hover:scale-[1.04]"
                     loading="lazy"
                   />
                 </Reveal>
-                {results.map(([src, alt], i) => (
-                  <Reveal
-                    key={src}
-                    delay={i * 60}
-                    className="-mt-px -ml-px overflow-hidden border-t border-l border-hairline bg-secondary"
-                  >
-                    <img
-                      src={src}
-                      alt={alt}
-                      className="aspect-[5/4] w-full object-cover transition-transform duration-700 hover:scale-[1.04]"
-                      loading="lazy"
-                    />
-                  </Reveal>
-                ))}
-              </div>
+              ))}
             </div>
           </div>
         </section>
