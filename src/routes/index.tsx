@@ -7,7 +7,6 @@ import themeMinimal from "@/assets/modern-minimal.png.asset.json";
 import themeRetro from "@/assets/retro-flash.png.asset.json";
 import themeEditorial from "@/assets/editorial-clean.png.asset.json";
 import themeCustom from "@/assets/custom-theme.png.asset.json";
-import galleryMonitor from "@/assets/gallery-monitor.png.asset.json";
 import boothTelephone from "@/assets/booth-telephone.png.asset.json";
 import boothElevator from "@/assets/booth-elevator.png.asset.json";
 import boothCowboy from "@/assets/booth-cowboy.png.asset.json";
