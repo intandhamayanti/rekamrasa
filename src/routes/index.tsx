@@ -7,7 +7,6 @@ import themeMinimal from "@/assets/modern-minimal.png.asset.json";
 import themeRetro from "@/assets/retro-flash.png.asset.json";
 import themeEditorial from "@/assets/editorial-clean.png.asset.json";
 import themeCustom from "@/assets/custom-theme.png.asset.json";
-import galleryMonitor from "@/assets/gallery-monitor.png.asset.json";
 import boothTelephone from "@/assets/booth-telephone.png.asset.json";
 import boothElevator from "@/assets/booth-elevator.png.asset.json";
 import boothCowboy from "@/assets/booth-cowboy.png.asset.json";
@@ -192,7 +191,6 @@ const packages = [
       "Operator standby",
       "Setup dan bongkar booth",
       "Template standar",
-      "Print dibawa pulang tamu",
     ],
     cta: "Pilih Paket B",
     featured: true,
@@ -580,12 +578,6 @@ function Index() {
                     delay={i * 70}
                     className="group relative -mt-px -ml-px flex min-h-[13rem] flex-col justify-end overflow-hidden border-t border-l border-hairline bg-card p-7 transition-colors duration-500 hover:bg-primary hover:text-primary-foreground"
                   >
-                    <span
-                      aria-hidden="true"
-                      className="pointer-events-none absolute -top-6 -right-3 font-serif text-[6rem] leading-none text-foreground/[0.05] transition-all duration-700 group-hover:-translate-y-1 group-hover:text-primary-foreground/10"
-                    >
-                      ✦
-                    </span>
                     <h3 className="relative font-serif text-[1.9rem] leading-tight transition-transform duration-500 group-hover:translate-x-1">
                       {name}
                     </h3>
@@ -821,31 +813,21 @@ function Index() {
         <section className="rule">
           <div className="mx-auto max-w-[1180px] px-6 py-20 md:py-28">
             <h2 className="font-serif text-[2rem] md:text-[2.6rem]">Hasil acara</h2>
-            <div className="mt-10 overflow-hidden rounded-[2px] border border-hairline">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3">
-                <Reveal className="-mt-px -ml-px overflow-hidden border-t border-l border-hairline sm:col-span-2">
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {results.map(([src, alt], i) => (
+                <Reveal
+                  key={src}
+                  delay={i * 60}
+                  className="overflow-hidden rounded-[2px] border border-hairline bg-secondary"
+                >
                   <img
-                    src={galleryMonitor.url}
-                    alt="Layar photobooth Rekam Rasa menampilkan sesi tamu di acara pernikahan"
-                    className="aspect-[5/4] w-full object-cover transition-transform duration-700 hover:scale-[1.04] sm:aspect-[10/4]"
+                    src={src}
+                    alt={alt}
+                    className="aspect-[5/4] w-full object-cover transition-transform duration-700 hover:scale-[1.04]"
                     loading="lazy"
                   />
                 </Reveal>
-                {results.map(([src, alt], i) => (
-                  <Reveal
-                    key={src}
-                    delay={i * 60}
-                    className="-mt-px -ml-px overflow-hidden border-t border-l border-hairline bg-secondary"
-                  >
-                    <img
-                      src={src}
-                      alt={alt}
-                      className="aspect-[5/4] w-full object-cover transition-transform duration-700 hover:scale-[1.04]"
-                      loading="lazy"
-                    />
-                  </Reveal>
-                ))}
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -1012,30 +994,10 @@ function Index() {
           </div>
         </section>
 
-        {/* FINAL CTA — with photo strip gimmicks */}
+        {/* FINAL CTA */}
         <section id="konsultasi" className="rule">
           <div className="mx-auto max-w-[1180px] px-6 py-16 md:py-24">
             <Reveal className="relative overflow-hidden rounded-[8px] border border-foreground bg-primary px-6 py-20 text-center text-primary-foreground md:px-16 md:py-32">
-              {/* gimmick strips */}
-              <img
-                src={heroStrips.url}
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute -top-10 -left-14 hidden w-52 rotate-[-14deg] rounded-[3px] border border-primary-foreground/20 opacity-25 transition-transform duration-700 hover:rotate-[-8deg] md:block"
-              />
-              <img
-                src={heroStrips.url}
-                alt=""
-                aria-hidden="true"
-                className="pointer-events-none absolute -right-16 -bottom-14 hidden w-56 rotate-[12deg] rounded-[3px] border border-primary-foreground/20 opacity-25 md:block"
-              />
-              <span className="pointer-events-none absolute top-10 right-12 hidden font-serif text-[1.6rem] opacity-30 md:block">
-                ✦
-              </span>
-              <span className="pointer-events-none absolute bottom-14 left-16 hidden font-serif text-[1.2rem] opacity-25 md:block">
-                ✦
-              </span>
-
               <div className="relative">
                 <p className="text-[0.66rem] tracking-[0.28em] uppercase opacity-70">
                   Siap booking acaramu
